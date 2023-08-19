@@ -1,4 +1,4 @@
-namespace JwrAuthAspNet7WepAPI;
+namespace JWTAuthAspNet7WepAPI;
 
 public class WeatherForecast
 {

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwrAuthAspNet7WepAPI", "JwrAuthAspNet7WepAPI\JwrAuthAspNet7WepAPI.csproj", "{442B1678-2131-40A1-8444-4DDFAC8823C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTAuthAspNet7WepAPI", "JWTAuthAspNet7WepAPI\JWTAuthAspNet7WepAPI.csproj", "{442B1678-2131-40A1-8444-4DDFAC8823C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
