@@ -9,48 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94008283-8408-4389-8be6-cb7ee45f1cf8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Core/DbContext/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/JWTAuthAspNet7WepAPI.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/JWTAuthAspNet7WepAPI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/JWTAuthAspNet7WepAPI.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/JwrAuthAspNet7WepAPI.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/JwrAuthAspNet7WepAPI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/WeatherForecast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.GlobalUsings.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JwrAuthAspNet7WepAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/JwrAuthAspNet7WepAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/JwrAuthAspNet7WepAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/JwrAuthAspNet7WepAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/JwrAuthAspNet7WepAPI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/JwrAuthAspNet7WepAPI.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JwrAuthAspNet7WepAPI/obj/rider.project.restore.info" beforeDir="false" />
+    <list default="true" id="94008283-8408-4389-8be6-cb7ee45f1cf8" name="Changes" comment="implement DB and Identity">
+      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Dtos/LoginDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Dtos/RegisterDto.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +58,9 @@
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
     "rider.external.source.directories": [
       "C:\\Users\\zohir\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
       "C:\\Users\\zohir\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
@@ -159,8 +123,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692442257266</updated>
-      <workItem from="1692442258381" duration="6025000" />
+      <workItem from="1692442258381" duration="9090000" />
     </task>
+    <task id="LOCAL-00001" summary="implement DB and Identity">
+      <option name="closed" value="true" />
+      <created>1692455897239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692455897239</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,5 +142,7 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="implement DB and Identity" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement DB and Identity" />
   </component>
 </project>

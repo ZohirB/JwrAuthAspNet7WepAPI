@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\JwrAuthAspNet7WepAPI.props" />
+</Project>
