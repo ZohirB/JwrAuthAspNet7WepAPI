@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Text;
 using JWTAuthAspNet7WepAPI.Core.OtherObjects;
 using JWTAuthAspNet7WepAPI.Dtos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -30,18 +31,20 @@ public class AuthController : ControllerBase
     [Route("seed-roles")]
     public async Task<IActionResult> SeedRoles()
     {
-        bool isUserRoleExists = await _roleManager.RoleExistsAsync(StaticUserRoles.USER);
+        bool isAppRoleExists = await _roleManager.RoleExistsAsync(StaticUserRoles.APP_USER);
+        bool isDashRoleExists = await _roleManager.RoleExistsAsync(StaticUserRoles.Dash_USER);
         bool isAdminRoleExists = await _roleManager.RoleExistsAsync(StaticUserRoles.ADMIN);
-        bool isOwnerRoleExists = await _roleManager.RoleExistsAsync(StaticUserRoles.OWNER);
+        bool isSuperAdminRoleExists = await _roleManager.RoleExistsAsync(StaticUserRoles.SUPER_ADMIN);
 
-        if (isUserRoleExists && isAdminRoleExists && isOwnerRoleExists)
+        if (isAppRoleExists && isDashRoleExists && isAdminRoleExists && isSuperAdminRoleExists)
         {
             return Ok("role seeding is already done");
         }
         
-        await _roleManager.CreateAsync(new IdentityRole(StaticUserRoles.USER));
+        await _roleManager.CreateAsync(new IdentityRole(StaticUserRoles.APP_USER));
+        await _roleManager.CreateAsync(new IdentityRole(StaticUserRoles.Dash_USER));
         await _roleManager.CreateAsync(new IdentityRole(StaticUserRoles.ADMIN));
-        await _roleManager.CreateAsync(new IdentityRole(StaticUserRoles.OWNER));
+        await _roleManager.CreateAsync(new IdentityRole(StaticUserRoles.SUPER_ADMIN));
 
         return Ok("role seeding Done Successfully");
     }
@@ -71,7 +74,7 @@ public class AuthController : ControllerBase
 
             return BadRequest(errorString);
         }
-        await _userManager.AddToRoleAsync(newUser, StaticUserRoles.USER);  
+        await _userManager.AddToRoleAsync(newUser, StaticUserRoles.APP_USER);  
         return Ok("User Created Successfully");
     }
 
@@ -117,7 +120,8 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost]
-    [Route("make-admin")]
+    [Route("MakeAdminUser")]
+    [Authorize(Roles = StaticUserRoles.SUPER_ADMIN)]
     public async Task<IActionResult> MakeAdmin ([FromBody] UpdatePermissionDto updatePermissionDto)
     {
         var user = await _userManager.FindByNameAsync(updatePermissionDto.UserName);
@@ -128,13 +132,14 @@ public class AuthController : ControllerBase
     }
     
     [HttpPost]
-    [Route("make-owner")]
-    public async Task<IActionResult> MakeOwner ([FromBody] UpdatePermissionDto updatePermissionDto)
+    [Route("MakeDashUser")]
+    [Authorize(Roles = StaticUserRoles.SUPER_ADMIN + "," + StaticUserRoles.ADMIN)]
+    public async Task<IActionResult> MakeDashUser ([FromBody] UpdatePermissionDto updatePermissionDto)
     {
         var user = await _userManager.FindByNameAsync(updatePermissionDto.UserName);
         if (user is null)
             return BadRequest("invalid user name!");
-        await _userManager.AddToRoleAsync(user, StaticUserRoles.OWNER);
+        await _userManager.AddToRoleAsync(user, StaticUserRoles.Dash_USER);
         return Ok("User is now an OWNER");
     }
 }

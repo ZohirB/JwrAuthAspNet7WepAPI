@@ -19,11 +19,19 @@ public class WeatherForecastController : ControllerBase
     {
         return Ok(Summaries);
     }
+ 
+    [HttpGet]
+    [Route("GetAppUserRole")]
+    [Authorize(Roles = StaticUserRoles.APP_USER)]
+    public IActionResult GetAppUserRole()
+    {
+        return Ok(Summaries);
+    }
     
     [HttpGet]
-    [Route("GetUserRole")]
-    [Authorize(Roles = StaticUserRoles.USER)]
-    public IActionResult GetUserRole()
+    [Route("GetDashUserRole")]
+    [Authorize(Roles = StaticUserRoles.Dash_USER)]
+    public IActionResult GetDashUserRole()
     {
         return Ok(Summaries);
     }
@@ -38,8 +46,8 @@ public class WeatherForecastController : ControllerBase
     
         
     [HttpGet]
-    [Route("GetOwnerRole")]
-    [Authorize(Roles = StaticUserRoles.OWNER)]
+    [Route("GetSuperAdminRole")]
+    [Authorize(Roles = StaticUserRoles.SUPER_ADMIN)]
     public IActionResult GetOwnerRole()
     {
         return Ok(Summaries);
