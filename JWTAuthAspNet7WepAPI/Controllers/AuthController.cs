@@ -115,4 +115,6 @@ public class AuthController : ControllerBase
         string token = new JwtSecurityTokenHandler().WriteToken(tokenObject);
         return token;
     }
+    
+
 }
