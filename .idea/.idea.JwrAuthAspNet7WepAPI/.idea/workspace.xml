@@ -9,9 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94008283-8408-4389-8be6-cb7ee45f1cf8" name="Changes" comment="implement DB and Identity">
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Dtos/LoginDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Dtos/RegisterDto.cs" afterDir="false" />
+    <list default="true" id="94008283-8408-4389-8be6-cb7ee45f1cf8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/dataSources/cd2e38b1-483e-4619-b9a3-3b7bc656b26f/storage_v2/_src_/database/JwtAuthAspNet7WebAPIDB.LYCRDA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/dataSources/cd2e38b1-483e-4619-b9a3-3b7bc656b26f/storage_v2/_src_/database/JwtAuthAspNet7WebAPIDB.LYCRDA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JwrAuthAspNet7WepAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/JWTAuthAspNet7WepAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/JWTAuthAspNet7WepAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Migrations/20230819141539_initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/Migrations/20230819141539_initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/JWTAuthAspNet7WepAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/JWTAuthAspNet7WepAPI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/JWTAuthAspNet7WepAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/JWTAuthAspNet7WepAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/JWTAuthAspNet7WepAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/JWTAuthAspNet7WepAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/JWTAuthAspNet7WepAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/ref/JWTAuthAspNet7WepAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/ref/JWTAuthAspNet7WepAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/refint/JWTAuthAspNet7WepAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/Debug/net7.0/refint/JWTAuthAspNet7WepAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/JWTAuthAspNet7WepAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/JWTAuthAspNet7WepAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/JWTAuthAspNet7WepAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/JWTAuthAspNet7WepAPI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/JWTAuthAspNet7WepAPI/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +59,9 @@
     <setting file="file://$PROJECT_DIR$/JWTAuthAspNet7WepAPI/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2UCSpWp0CghSk63y2WLDwtrCOCn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -123,7 +148,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692442257266</updated>
-      <workItem from="1692442258381" duration="9090000" />
+      <workItem from="1692442258381" duration="12897000" />
     </task>
     <task id="LOCAL-00001" summary="implement DB and Identity">
       <option name="closed" value="true" />
@@ -133,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692455897239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add Dtos and Static Roles">
+      <option name="closed" value="true" />
+      <created>1692457193522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692457193522</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +176,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="implement DB and Identity" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement DB and Identity" />
+    <MESSAGE value="add Dtos and Static Roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Dtos and Static Roles" />
   </component>
 </project>
