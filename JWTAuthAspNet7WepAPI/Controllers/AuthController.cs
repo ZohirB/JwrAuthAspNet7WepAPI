@@ -1,6 +1,7 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using JWTAuthAspNet7WepAPI.Core.Entities;
 using JWTAuthAspNet7WepAPI.Core.OtherObjects;
 using JWTAuthAspNet7WepAPI.Dtos;
 using Microsoft.AspNetCore.Authorization;
@@ -16,10 +17,10 @@ namespace JWTAuthAspNet7WepAPI.Controllers;
 
 public class AuthController : ControllerBase
 {
-    private readonly UserManager<IdentityUser> _userManager;
+    private readonly UserManager<ApplicationUser> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly IConfiguration _configuration;
-    public AuthController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+    public AuthController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
     {
         _userManager = userManager;
         _roleManager = roleManager;
@@ -57,9 +58,11 @@ public class AuthController : ControllerBase
         if (isExistUser != null)
             return BadRequest("UserName Already Exists");
 
-        IdentityUser newUser = new IdentityUser()
+        ApplicationUser newUser = new ApplicationUser()
         {
-            Email = registerDto.Email,
+            FirstName = registerDto.FisrtName,
+            LastName = registerDto.LastName,
+            Email = registerDto.LastName,
             UserName = registerDto.UserName,
             SecurityStamp = Guid.NewGuid().ToString(),
         };
@@ -95,6 +98,8 @@ public class AuthController : ControllerBase
             new Claim(ClaimTypes.Name, user.UserName),
             new Claim(ClaimTypes.NameIdentifier, user.Id),
             new Claim("JWTID", Guid.NewGuid().ToString()),
+            new Claim("FirstName", user.FirstName),
+            new Claim("LastName", user.LastName),
         };
         foreach (var userRole in userRoles)
         {
@@ -127,6 +132,8 @@ public class AuthController : ControllerBase
         var user = await _userManager.FindByNameAsync(updatePermissionDto.UserName);
         if (user is null)
             return BadRequest("invalid user name!");
+        
+        
         await _userManager.AddToRoleAsync(user, StaticUserRoles.ADMIN);
         return Ok("User is now an ADMIN");
     }
@@ -142,4 +149,19 @@ public class AuthController : ControllerBase
         await _userManager.AddToRoleAsync(user, StaticUserRoles.Dash_USER);
         return Ok("User is now an OWNER");
     }
+
+    [HttpDelete]
+    [Route("DeleteUser")]
+    [Authorize(Roles = StaticUserRoles.SUPER_ADMIN)]
+    public async Task<IActionResult> DeleteUser(string userName)
+    {
+        var deleteUser = await _userManager.FindByNameAsync(userName);
+        if (deleteUser == null)
+        {
+            return NotFound(value: "No User found by givenName");
+        }
+        await _userManager.DeleteAsync(deleteUser);
+        return Ok(deleteUser);
+    }
+
 }
